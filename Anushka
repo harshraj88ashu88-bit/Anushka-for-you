@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hi Anu 🌹</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#fff0f6;
+  font-family:Arial, sans-serif;
+  text-align:center;
+  overflow:hidden;
+}
+
+h1{
+  color:pink;
+  font-size:26px;
+}
+
+p{
+  font-size:20px;
+  margin:20px 0;
+}
+
+button{
+  padding:12px 30px;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  margin:10px;
+}
+
+.yes{
+  background:red;
+  color:white;
+}
+
+.no{
+  background:purple;
+  color:white;
+  position:absolute;
+}
+</style>
+</head>
+
+<body>
+<div>
+<h1>
+Hi Anu 🌹<br>
+I have something very special to ask you…<br>
+Please answer honestly 😊
+</h1>
+
+<p>Hey will you be my Valentine 💝 anu ❤️😢</p>
+
+<button class="yes" onclick="yesClick()">Yes</button>
+<button class="no" id="noBtn" onclick="moveNo()">No</button>
+</div>
+
+<script>
+function moveNo(){
+  let b=document.getElementById("noBtn");
+  b.style.left=Math.random()*(window.innerWidth-100)+"px";
+  b.style.top=Math.random()*(window.innerHeight-50)+"px";
+}
+
+function yesClick(){
+  let w=window.open("","_blank");
+  w.document.write(`
+  <html><head><style>
+  body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#eaffea;
+    font-family:Arial;
+    text-align:center;
+  }
+  h1{
+    color:green;
+    font-size:28px;
+    font-weight:bold;
+    animation:move 2s infinite alternate;
+  }
+  @keyframes move{
+    from{transform:translateY(-15px);}
+    to{transform:translateY(15px);}
+  }
+  </style></head>
+  <body>
+  <div>
+  <h1>
+  Take a screenshot and send it to your Boyfriend ❤️<br><br>
+  Anu ab to ap fas gae mere payar me 😎❤️
+  </h1>
+  <audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+  </audio>
+  </div>
+  </body></html>
+  `);
+}
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hi Anu 🌹</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#fff0f6;
+  font-family:Arial, sans-serif;
+  text-align:center;
+  overflow:hidden;
+}
+
+h1{
+  color:pink;
+  font-size:26px;
+}
+
+p{
+  font-size:20px;
+  margin:20px 0;
+}
+
+button{
+  padding:12px 30px;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  margin:10px;
+}
+
+.yes{
+  background:red;
+  color:white;
+}
+
+.no{
+  background:purple;
+  color:white;
+  position:absolute;
+}
+</style>
+</head>
+
+<body>
+<div>
+<h1>
+Hi Anu 🌹<br>
+I have something very special to ask you…<br>
+Please answer honestly 😊
+</h1>
+
+<p>Hey will you be my Valentine 💝 anu ❤️😢</p>
+
+<button class="yes" onclick="yesClick()">Yes</button>
+<button class="no" id="noBtn" onclick="moveNo()">No</button>
+</div>
+
+<script>
+function moveNo(){
+  let b=document.getElementById("noBtn");
+  b.style.left=Math.random()*(window.innerWidth-100)+"px";
+  b.style.top=Math.random()*(window.innerHeight-50)+"px";
+}
+
+function yesClick(){
+  let w=window.open("","_blank");
+  w.document.write(`
+  <html><head><style>
+  body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#eaffea;
+    font-family:Arial;
+    text-align:center;
+  }
+  h1{
+    color:green;
+    font-size:28px;
+    font-weight:bold;
+    animation:move 2s infinite alternate;
+  }
+  @keyframes move{
+    from{transform:translateY(-15px);}
+    to{transform:translateY(15px);}
+  }
+  </style></head>
+  <body>
+  <div>
+  <h1>
+  Take a screenshot and send it to your Boyfriend ❤️<br><br>
+  Anu ab to ap fas gae mere payar me 😎❤️
+  </h1>
+  <audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+  </audio>
+  </div>
+  </body></html>
+  `);
+}
+</script>
+</body>
+</html>
