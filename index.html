@@ -2,112 +2,107 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Hi Anu 🌹</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<title>Valentine Proposal 💖</title>
 <style>
-body{
-  margin:0;
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#fff0f6;
-  font-family:Arial, sans-serif;
-  text-align:center;
-  overflow:hidden;
-}
+    body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 30px;
+    }
 
-h1{
-  color:pink;
-  font-size:26px;
-}
+    .purple { color: purple; font-size: 28px; font-weight: bold; }
+    .green { color: green; font-size: 18px; }
+    .cyan { color: cyan; font-size: 18px; }
+    .darkblue { color: darkblue; font-size: 22px; margin-top: 20px; }
+    .pink { color: hotpink; font-size: 26px; font-weight: bold; }
 
-p{
-  font-size:20px;
-  margin:20px 0;
-}
+    button {
+        font-size: 18px;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 15px;
+        position: relative;
+    }
 
-button{
-  padding:12px 30px;
-  font-size:18px;
-  border:none;
-  border-radius:30px;
-  cursor:pointer;
-  margin:10px;
-}
+    #yesBtn {
+        background-color: red;
+        color: white;
+    }
 
-.yes{
-  background:red;
-  color:white;
-}
-
-.no{
-  background:purple;
-  color:white;
-  position:absolute;
-}
+    #noBtn {
+        background-color: red;
+        color: white;
+        position: absolute;
+    }
 </style>
 </head>
 
 <body>
-<div>
-<h1>
-Hi Anu 🌹<br>
-I have something very special to ask you…<br>
-Please answer honestly 😊
-</h1>
 
-<p>Hey will you be my Valentine 💝 anu ❤️😢</p>
+<p class="purple">Hey anu❤️</p>
 
-<button class="yes" onclick="yesClick()">Yes</button>
-<button class="no" id="noBtn" onclick="moveNo()">No</button>
-</div>
+<p class="green">
+How are you, I hope achi hogi, i know 😄 ki tumhe kisi ke upar bharosha nahi ❌️ hota hai
+but mai chahta hu tum mere upar bharosha kro ✅️, krogi na anu 🫠
+</p>
+
+<p class="cyan">
+Tumhari masumiyat itni pyari hai, jaise baarish ke baad ki pehli dhoop.
+</p>
+
+<p class="cyan">
+Tumhari aankhein woh samandar hain, jahan meri duniya ki saree hasratein doob jaati hain.
+</p>
+
+<p class="darkblue">So, anu</p>
+
+<p class="pink">Will you be my Valentine 💖</p>
+
+<button id="yesBtn" onclick="yesClicked()">Yes</button>
+<button id="noBtn" onmouseover="moveNo()">No</button>
+
+<p style="margin-top:40px;font-weight:bold;">Your Harsh ❤️</p>
 
 <script>
-function moveNo(){
-  let b=document.getElementById("noBtn");
-  b.style.left=Math.random()*(window.innerWidth-100)+"px";
-  b.style.top=Math.random()*(window.innerHeight-50)+"px";
-}
+    function moveNo() {
+        const noBtn = document.getElementById("noBtn");
+        const x = Math.random() * (window.innerWidth - 100);
+        const y = Math.random() * (window.innerHeight - 100);
+        noBtn.style.left = x + "px";
+        noBtn.style.top = y + "px";
+    }
 
-function yesClick(){
-  let w=window.open("","_blank");
-  w.document.write(`
-  <html><head><style>
-  body{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#eaffea;
-    font-family:Arial;
-    text-align:center;
-  }
-  h1{
-    color:green;
-    font-size:28px;
-    font-weight:bold;
-    animation:move 2s infinite alternate;
-  }
-  @keyframes move{
-    from{transform:translateY(-15px);}
-    to{transform:translateY(15px);}
-  }
-  </style></head>
-  <body>
-  <div>
-  <h1>
-  Take a screenshot and send it to your Boyfriend ❤️<br><br>
-  Anu ab to ap fas gae mere payar me 😎❤️
-  </h1>
-  <audio autoplay loop>
-  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
-  </audio>
-  </div>
-  </body></html>
-  `);
-}
+    function yesClicked() {
+        const yesBtn = document.getElementById("yesBtn");
+        yesBtn.style.backgroundColor = "green";
+
+        const newWindow = window.open("", "_blank");
+        newWindow.document.write(`
+            <html>
+            <head>
+                <title>Love You 💌</title>
+                <style>
+                    body {
+                        font-family: Arial;
+                        text-align: center;
+                        background-color: #fff0f5;
+                        padding-top: 100px;
+                    }
+                    h1 { color: green; }
+                    h2 { color: hotpink; }
+                </style>
+            </head>
+            <body>
+                <h1>Thank You ❤️</h1>
+                <h2>And I love you anu 💌</h2>
+            </body>
+            </html>
+        `);
+    }
 </script>
+
 </body>
 </html>
