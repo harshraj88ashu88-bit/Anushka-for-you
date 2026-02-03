@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hi Anu 🌹</title>
+<style>
+  body {
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff0f6;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    overflow:hidden;
+  }
+  h1 {
+    color:pink;
+    font-size:26px;
+  }
+  p {
+    font-size:20px;
+    margin:15px 0;
+  }
+  button {
+    padding:12px 30px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    margin:10px;
+    position:relative;
+  }
+  .yes {
+    background:red;
+    color:white;
+  }
+  #noBtn {
+    background:purple;
+    color:white;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+</style>
+</head>
+<body>
+
+<!-- Background music -->
+<audio autoplay loop>
+  <source src="love.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div>
+  <h1>Hi Anu 🌹<br>I have something very special to ask you…<br>Please answer honestly 😊</h1>
+  <p>Hey, will you be my Valentine 💝 anu ❤️😢</p>
+  <button class="yes" onclick="yesClick()">Yes</button>
+  <button id="noBtn" onclick="moveNo()">No</button>
+</div>
+
+<script>
+  // No button moves randomly
+  function moveNo(){
+    let b=document.getElementById("noBtn");
+    b.style.left=Math.random()*(window.innerWidth-100)+"px";
+    b.style.top=Math.random()*(window.innerHeight-50)+"px";
+  }
+
+  // Yes button click
+  function yesClick(){
+    document.body.innerHTML = `
+      <div style="text-align:center; color:green; font-weight:bold; font-size:24px; margin:50px;">
+        Yay! ❤️ You said Yes!<br><br>
+        “You are my love, my peace, my happiness. Without you, everything feels incomplete.”<br><br>
+        “From the day you came into my life, my heart chose you—and it still chooses you every single day.”<br><br>
+        “I don’t want a perfect story, I just want you in every chapter of my life."
+      </div>
+    `;
+  }
+</script>
+</body>
+</html>
