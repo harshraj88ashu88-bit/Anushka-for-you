@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine Proposal 💖</title>
+<style>
+    body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .purple { color: purple; font-size: 28px; font-weight: bold; }
+    .green { color: green; font-size: 18px; }
+    .cyan { color: cyan; font-size: 18px; }
+    .darkblue { color: darkblue; font-size: 22px; margin-top: 20px; }
+    .pink { color: hotpink; font-size: 26px; font-weight: bold; }
+
+    button {
+        font-size: 18px;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 15px;
+        position: relative;
+    }
+
+    #yesBtn {
+        background-color: red;
+        color: white;
+    }
+
+    #noBtn {
+        background-color: red;
+        color: white;
+        position: absolute;
+    }
+</style>
+</head>
+
+<body>
+
+<p class="purple">Hey anu❤️</p>
+
+<p class="green">
+How are you, I hope achi hogi, i know 😄 ki tumhe kisi ke upar bharosha nahi ❌️ hota hai
+but mai chahta hu tum mere upar bharosha kro ✅️, krogi na anu 🫠
+</p>
+
+<p class="cyan">
+Tumhari masumiyat itni pyari hai, jaise baarish ke baad ki pehli dhoop.
+</p>
+
+<p class="cyan">
+Tumhari aankhein woh samandar hain, jahan meri duniya ki saree hasratein doob jaati hain.
+</p>
+
+<p class="darkblue">So, anu</p>
+
+<p class="pink">Will you be my Valentine 💖</p>
+
+<button id="yesBtn" onclick="yesClicked()">Yes</button>
+<button id="noBtn" onmouseover="moveNo()">No</button>
+
+<p style="margin-top:40px;font-weight:bold;">Your Harsh ❤️</p>
+
+<script>
+    function moveNo() {
+        const noBtn = document.getElementById("noBtn");
+        const x = Math.random() * (window.innerWidth - 100);
+        const y = Math.random() * (window.innerHeight - 100);
+        noBtn.style.left = x + "px";
+        noBtn.style.top = y + "px";
+    }
+
+    function yesClicked() {
+        const yesBtn = document.getElementById("yesBtn");
+        yesBtn.style.backgroundColor = "green";
+
+        const newWindow = window.open("", "_blank");
+        newWindow.document.write(`
+            <html>
+            <head>
+                <title>Love You 💌</title>
+                <style>
+                    body {
+                        font-family: Arial;
+                        text-align: center;
+                        background-color: #fff0f5;
+                        padding-top: 100px;
+                    }
+                    h1 { color: green; }
+                    h2 { color: hotpink; }
+                </style>
+            </head>
+            <body>
+                <h1>Thank You ❤️</h1>
+                <h2>And I love you anu 💌</h2>
+            </body>
+            </html>
+        `);
+    }
+</script>
+
+</body>
+</html>
